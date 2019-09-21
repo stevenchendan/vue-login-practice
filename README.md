@@ -40,18 +40,39 @@ npm run serve
 ```
 
 ## 3. How to use:
+![front page](https://i.ibb.co/k98FwNW/login.png)
 
+This is the front page. The sign up function is under construction.
 
+You can provide any username or password to sign in.
+
+![after login](https://i.ibb.co/xfbMpm2/Capture.png)
+
+After login you will see this welcome page with the user name on it.
 
 ## 4. Deployment:
 
+use to generate the dist folder.
+```
+npm run build
+```
 
+or you can preview the production version by install serve locally:
+
+```
+npm install -g serve
+```
+And then use the following commend to preview
+```
+serve -s dist
+```
 
 
 ## 5. Recommended improvements:
 
-- Use serverless framework to manage this project including develop, test and deployment.
-- Add unit tests to make sure the core functions work well.
-- Always use async in your lambda function(don't make Bezos rich)
-- The email content is not well-formated
-- Api gateway need to be more secured
+Here are some improvement suggestion:
+
+- Add Unit test
+- Add oauth(linkedin,  google...) to register
+- Add forget password
+
